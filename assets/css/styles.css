@@ -177,7 +177,19 @@ img {
     transition: var(--transition);
 }
 
-/* Hero Section (continued) */
+/* Hero Section */
+.hero {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .hero-content {
     flex: 1;
     padding-right: 30px;
