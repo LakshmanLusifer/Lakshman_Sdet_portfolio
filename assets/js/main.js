@@ -146,52 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Custom cursor effect
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
-    
-    if (cursorDot && cursorOutline) {
-        window.addEventListener('mousemove', (e) => {
-            // Position the dot at cursor position
-            cursorDot.style.left = `${e.clientX}px`;
-            cursorDot.style.top = `${e.clientY}px`;
-            
-            // Position the outline with slight delay for effect
-            setTimeout(() => {
-                cursorOutline.style.left = `${e.clientX}px`;
-                cursorOutline.style.top = `${e.clientY}px`;
-            }, 50);
-        });
-        
-        // Hover effect on interactive elements
-        const interactiveElements = document.querySelectorAll('a, button, .btn, .skill-item, .project-card, .achievement-card');
-        
-        interactiveElements.forEach(element => {
-            element.addEventListener('mouseenter', () => {
-                cursorDot.style.width = '12px';
-                cursorDot.style.height = '12px';
-                cursorOutline.style.width = '30px';
-                cursorOutline.style.height = '30px';
-                cursorOutline.style.borderColor = 'rgba(110, 86, 207, 0.8)';
-            });
-            
-            element.addEventListener('mouseleave', () => {
-                cursorDot.style.width = '8px';
-                cursorDot.style.height = '8px';
-                cursorOutline.style.width = '40px';
-                cursorOutline.style.height = '40px';
-                cursorOutline.style.borderColor = 'rgba(110, 86, 207, 0.5)';
-            });
-        });
-        
-        // Hide cursor when leaving window
-        document.addEventListener('mouseleave', () => {
-            cursorDot.style.display = 'none';
-            cursorOutline.style.display = 'none';
-        });
-        
-        document.addEventListener('mouseenter', () => {
-            cursorDot.style.display = 'block';
-            cursorOutline.style.display = 'block';
-        });
-    }
+    // const cursorDot = document.querySelector('.cursor-dot');
+    // const cursorOutline = document.querySelector('.cursor-outline');
 });

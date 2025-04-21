@@ -394,35 +394,6 @@ body.cursor-theme .footer-social a:hover {
   color: var(--cursor-accent);
 }
 
-/* Animated cursor effect */
-.cursor-dot {
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: var(--cursor-accent);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: width 0.2s, height 0.2s;
-}
-
-.cursor-outline {
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 2px solid rgba(110, 86, 207, 0.5);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9998;
-  transition: all 0.1s ease-out;
-}
-
 /* Glow effect on hover */
 body.cursor-theme a:hover,
 body.cursor-theme button:hover,
